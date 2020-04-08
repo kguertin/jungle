@@ -31,7 +31,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
-        <li>Signed in as <%= current_user.email %></li>
+        <li><a href="#"> Signed in as: <%= current_user.email %></a></li>
         <li> <%= link_to "Logout", '/logout' %></li>
       <% else %>
         <li><%= link_to 'Login', '/login' %></li>
